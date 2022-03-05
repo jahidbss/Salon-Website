@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --bg1:  #151828;
+    --bg2:  #1b1f34;
+    --body: #e4e4e6;
+    --brand:#ffab76;
+    --text: #fff ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--body);
+    line-height: 1.8;
+    background-color: var(--bg1);
+}
+
+
+/* navbar section  */
+.header-wrapper .navbar-brand img{
+    width: 70px;
+}
+.header-wrapper .nav-item .nav-link {
+    color: var(--text);
+    padding-left: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease-in;
+}
+
+.header-wrapper .nav-item .nav-link::after{
+    position: absolute;
+    content: '';
+    top: 45px;
+    left: 14px;
+    bottom: 0px;
+    width: 0;
+    height: 2px;
+    background-color: #f17121;
+}
+
+.header-wrapper .nav-item .nav-link:hover:after{
+    width: 80%;
+}
+.header-wrapper .nav-item .nav-link:hover{
+    color: #f17121;
+}
+
+.menu-btn{
+    background-color: #fbfbff;
+    color: #000;
+    padding: 10px 30px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    transition: all .5s ease-in-out;
+}
+.menu-btn:hover{
+    background-color: #033118;
+    color: white;
+}
+
+/* Hero section  */
+
+.hero-section{
+    padding: 160px 0px;
+    background: linear-gradient(#1b1f34, rgba(26, 30, 50, 0.4)), url(../images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 676px;
+}
+.hero-section h1{
+    font-size: 48px;
+    color: #f17121;
+    font-weight: 600;
+}
+.hero-section p{
+    margin: 30px 0;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
